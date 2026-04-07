@@ -1,0 +1,218 @@
+/* ── App shell ───────────────────────────────── */
+.app {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+/* ── Header ──────────────────────────────────── */
+.header {
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.logo span {
+  color: var(--teal);
+}
+
+.tagline {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+/* ── Tabs ────────────────────────────────────── */
+.tabs {
+  display: flex;
+  gap: 6px;
+  padding: 1.25rem 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 4px 13px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.tab:hover {
+  border-color: var(--border-active);
+  color: var(--text-primary);
+}
+
+.tab--active {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: #d4b8f0;
+}
+
+/* ── Feed ────────────────────────────────────── */
+.feed {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Card ────────────────────────────────────── */
+.card {
+  padding: 0.95rem 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  margin: 0 -0.75rem;
+  transition: background 0.15s;
+}
+
+.card:hover {
+  background: rgba(91, 42, 134, 0.12);
+}
+
+.card__meta {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.card__source {
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+.card__category {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--purple);
+}
+
+.card__date {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.card__title {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  line-height: 1.55;
+  transition: color 0.1s;
+}
+
+.card__title:hover { color: #fff; }
+
+.card__title--read {
+  color: var(--text-muted);
+}
+
+/* ── Status messages ─────────────────────────── */
+.status {
+  padding: 2rem 0;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+}
+
+.status--error { color: #f87171; }
+
+/* ── Refresh button ──────────────────────────── */
+.refresh-btn {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 4px 13px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.refresh-btn:hover:not(:disabled) {
+  border-color: var(--border-active);
+  color: var(--text-primary);
+}
+
+.refresh-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* ── Header sub-row (tagline + nickname) ─────── */
+.header__sub {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nickname-reset {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  transition: color 0.15s;
+}
+
+.nickname-reset:hover {
+  color: var(--text-secondary);
+}
+
+/* ── Card title row (title + bookmark) ──────── */
+.card__title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card__title-row .card__title {
+  flex: 1;
+}
+
+/* ── Bookmark button ─────────────────────────── */
+.card__bookmark {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 2px;
+  margin-top: 2px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+}
+
+.card__bookmark:hover {
+  color: var(--teal);
+}
+
+.card__bookmark--saved {
+  color: var(--teal);
+}

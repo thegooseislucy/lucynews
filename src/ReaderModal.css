@@ -1,0 +1,217 @@
+.reader-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 6, 14, 0.85);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+
+.reader-modal {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 720px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ──────────────────────────────────── */
+.reader-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.reader-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.reader-source {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--teal);
+}
+
+.reader-date {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.reader-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reader-btn {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.reader-btn:hover {
+  border-color: var(--border-active);
+  color: var(--text-primary);
+}
+
+.reader-btn--close {
+  padding: 4px 10px;
+}
+
+/* ── Body ────────────────────────────────────── */
+.reader-body {
+  padding: 2rem 2.5rem 3rem;
+  overflow-y: auto;
+}
+
+.reader-title {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.reader-status {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  padding: 1rem 0;
+}
+
+.reader-status--error { color: #f87171; }
+
+/* ── Article content — Playfair Display ──────── */
+.reader-content {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #a8b4d0;
+}
+
+.reader-content p {
+  margin-bottom: 1.4rem;
+}
+
+.reader-content h1,
+.reader-content h2,
+.reader-content h3,
+.reader-content h4 {
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  font-weight: 500;
+  margin: 2rem 0 0.75rem;
+  line-height: 1.35;
+}
+
+.reader-content h2 { font-size: 1.1rem; }
+.reader-content h3 { font-size: 0.95rem; }
+
+.reader-content a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.reader-content a:hover { color: #c0dfde; }
+
+.reader-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin: 1.5rem 0;
+}
+
+.reader-content blockquote {
+  border-left: 2px solid var(--purple);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.reader-content pre,
+.reader-content code {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+}
+
+.reader-content pre {
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  border: 1px solid var(--border-subtle);
+}
+
+.reader-content code {
+  padding: 2px 6px;
+}
+
+.reader-content ul,
+.reader-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.reader-content li { margin-bottom: 0.4rem; }
+
+.reader-content hr {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 2rem 0;
+}
+
+.reader-content figure { margin: 1.5rem 0; }
+
+.reader-content figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.reader-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  margin: 1.25rem 0;
+}
+
+.reader-content th,
+.reader-content td {
+  padding: 8px 12px;
+  border: 1px solid var(--border-subtle);
+  text-align: left;
+}
+
+.reader-content th {
+  background: var(--surface);
+  color: var(--text-primary);
+  font-weight: 500;
+}

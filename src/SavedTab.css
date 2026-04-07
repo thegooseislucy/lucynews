@@ -1,0 +1,196 @@
+/* ── Empty state ──────────────────────────────── */
+.saved-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  gap: 0.6rem;
+  text-align: center;
+}
+
+.saved-empty-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  color: var(--text-muted);
+}
+
+.saved-empty p {
+  font-family: var(--font-mono);
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.saved-empty-hint {
+  font-size: 0.75rem !important;
+  color: var(--text-muted) !important;
+}
+
+.saved-empty-hint strong {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* ── Container ────────────────────────────────── */
+.saved-tab {
+  padding: 0.5rem 0 2rem;
+}
+
+/* ── Header row ───────────────────────────────── */
+.saved-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 1rem;
+}
+
+.saved-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.saved-nick {
+  color: var(--teal);
+}
+
+.export-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.export-btn:hover {
+  border-color: var(--border-active);
+  color: var(--text-primary);
+}
+
+/* ── Cards ────────────────────────────────────── */
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.saved-card {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: border-color 0.15s;
+}
+
+.saved-card:hover {
+  border-color: var(--border);
+}
+
+.saved-card-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.saved-source {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--teal);
+}
+
+.saved-category-tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--purple);
+}
+
+.saved-date {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.saved-title {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.52;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.saved-title:hover { color: #fff; }
+
+/* ── Per-card actions ─────────────────────────── */
+.saved-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.saved-copy-btn,
+.saved-original-btn,
+.saved-remove-btn {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  text-decoration: none;
+  border: 1px solid var(--border-subtle);
+}
+
+.saved-copy-btn {
+  background: var(--surface);
+  color: var(--text-secondary);
+}
+
+.saved-copy-btn:hover {
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+.saved-copy-btn.copied {
+  background: var(--teal-dim);
+  border-color: var(--teal-border);
+  color: var(--teal);
+}
+
+.saved-original-btn {
+  background: var(--surface);
+  color: var(--text-secondary);
+  display: inline-block;
+}
+
+.saved-original-btn:hover {
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+.saved-remove-btn {
+  background: transparent;
+  border-color: transparent;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.saved-remove-btn:hover {
+  color: #e05555;
+}

@@ -1,0 +1,120 @@
+.filterbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 0 1.25rem;
+  flex-wrap: wrap;
+}
+
+.filterbar__inputs {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.filterbar--active .filterbar__inputs {
+  border-color: var(--border);
+}
+
+.filterbar__field {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  padding: 0 10px;
+  gap: 7px;
+  transition: background 0.15s;
+}
+
+.filterbar__field--focused {
+  background: var(--surface-raised);
+}
+
+.filterbar__mode {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.filterbar__mode--include { color: var(--teal); }
+.filterbar__mode--exclude { color: #f87171; }
+
+.filterbar__input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding: 9px 0;
+  caret-color: var(--teal);
+}
+
+.filterbar__input::placeholder {
+  color: var(--text-muted);
+}
+
+.filterbar__divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.filterbar__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.filterbar__count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.filterbar__count-of {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.filterbar__clear {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.filterbar__clear:hover {
+  border-color: var(--border-active);
+  color: var(--text-primary);
+}
+
+.filterbar__hint {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
