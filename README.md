@@ -1,16 +1,33 @@
-# React + Vite
+# LucyNews
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal RSS reader built for my own reading habits. Clean, fast, no ads, no algorithms — just the feeds I care about.
 
-Currently, two official plugins are available:
+**[lucynews.vercel.app](https://lucynews.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What it is
 
-## React Compiler
+LucyNews pulls from 40+ RSS feeds across 9 categories — IT & Security, Apple, AI, Gaming, Emerging Tech, World News, US News, Buyer Guides, and Durham & Duke. Articles are sorted by date and presented without clutter.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Reader mode** — distills articles down to just the text, same engine Firefox uses
+- **Ask AI** — copies a prompt to your clipboard and opens Claude or ChatGPT so you can discuss any article
+- **Bookmarks** — save articles to a dedicated tab, with copy link and JSON export
+- **Keyword filters** — show or hide articles by keyword in real time
+- **Mark as read** — opened articles dim automatically
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech
+
+React + Vite, no backend. CORS handled via a Vercel serverless function. Bookmarks and preferences stored in localStorage. Icons by Lucide React.
+
+## Local development
+```bash
+npm install
+npm run dev
+```
+
+## Built by
+
+Lucy (the goose)
+
+THANKS FOR READING THIS
