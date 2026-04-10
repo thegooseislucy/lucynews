@@ -68,9 +68,9 @@ const FEEDS = [
   { name: 'Engadget',                 category: 'Buyer Guides',  url: 'https://engadget.com/rss.xml' },
 
 // Durham & Duke
-  { name: 'Duke Today',               category: 'Durham & Duke', url: 'https://today.duke.edu/rss/feed' },
-  { name: 'The Duke Chronicle',       category: 'Durham & Duke', url: 'https://www.dukechronicle.com/feeds/rss.xml' },
-  { name: 'Duke News',                category: 'Durham & Duke', url: 'https://news.duke.edu/feed' },
+{ name: 'Duke Today',            category: 'Durham & Duke', url: 'https://today.duke.edu/tags/news-releases-&-tips/rss' },
+{ name: 'Duke Today — OIT',      category: 'Durham & Duke', url: 'https://today.duke.edu/tags/oit/rss' },
+{ name: 'Duke Today — AI & Tech',category: 'Durham & Duke', url: 'https://today.duke.edu/tags/computing-&-technology/rss' },
 ]
 
 async function fetchFeed(feed) {
