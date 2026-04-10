@@ -7,7 +7,9 @@ import { BookmarkProvider, useBookmarks } from './BookmarkContext'
 import { Bookmark } from 'lucide-react'
 import NicknameModal from './NicknameModal'
 import SavedTab from './SavedTab'
-import { Analytics } from '@vercel/analytics/next'
+import { inject } from '@vercel/analytics'
+
+inject()
 
 const FEEDS = [
   // IT & Security
